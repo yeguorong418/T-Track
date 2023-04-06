@@ -1,0 +1,112 @@
+---
+# ref: https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+# 语言: None, Cpp, Java, JavaScript, ObjC, Proto, TableGen, TextProto
+Language: Cpp
+# BasedOnStyle: LLVM
+
+# 每行字符的限制，0表示没有限制
+ColumnLimit: 80
+
+# 预处理器指令的缩进样式
+IndentPPDirectives: None
+
+MacroBlockBegin: Without
+
+# 宏定义对齐
+AlignConsecutiveMacros: AcrossEmptyLinesAndComments
+#  Enabled: true
+#  AcrossEmptyLines: false
+#  AcrossComments: true
+
+AlignConsecutiveDeclarations: AcrossEmptyLinesAndComments
+#  Enabled: true
+#  AcrossComments: true
+
+# 缩进宽度
+IndentWidth: 4
+
+# 连续空行的最大数量
+MaxEmptyLinesToKeep: 2
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# 指针和引用的对齐: Left, Right, Middle
+PointerAlignment: Right
+
+# 允许重新排版注释
+ReflowComments: false
+# 对齐尾随注释
+AlignTrailingComments: true
+
+# 允许排序#include
+SortIncludes: Never
+
+# 标准: Cpp03, Cpp11, Auto
+Standard: Cpp11
+
+# tab宽度
+TabWidth: 4
+
+# 使用tab字符: Never, ForIndentation, ForContinuationAndIndentation, Always
+UseTab: Never
+
+# 缩进 case 标记 switch 语句的一级。
+IndentCaseLabels: false
+
+# 三元运算符将放置在换行符之后。
+BreakBeforeTernaryOperators: true
+
+# 请在 "{" 后进行分行
+BreakBeforeBraces: Allman
+# BreakBeforeBraces: Custom
+# BraceWrapping:
+#  AfterCaseLabel: true
+#  AfterClass: false
+#  AfterControlStatement: Always
+#  AfterEnum: true
+#  AfterFunction: true
+#  AfterNamespace: true
+#  AfterStruct: true
+#  AfterUnion: true
+#  AfterExternBlock: true
+#  BeforeElse: true
+#  BeforeWhile: false
+#  SplitEmptyFunction: true
+#  SplitEmptyRecord: true
+#  SplitEmptyNamespace: true
+
+# 超出 "ColumnLimit" 的长度, 函数调用的参数各占一行
+BinPackArguments: false
+
+BinPackParameters: false
+
+# 允许短的块放在同一行
+AllowShortBlocksOnASingleLine: Empty
+
+AllowAllParametersOfDeclarationOnNextLine: false
+
+AllowAllArgumentsOnNextLine: false
+
+# 运行返回值放在同一行
+AllowShortIfStatementsOnASingleLine: WithoutElse
+
+# 转义换行符中对齐反斜杠
+AlignEscapedNewlines: Left
+
+# 结构体数组对齐
+AlignArrayOfStructures: Right
+
+# 括号 '(' 的对齐方式
+AlignAfterOpenBracket: Align
+
+# 精确控制括号前的间距
+SpaceBeforeParens: ControlStatements
+# SpaceBeforeParensOptions:
+#   AfterControlStatements: true
+#   AfterForeachMacros: true
+#   AfterFunctionDefinitionName: false
+#   AfterFunctionDefinitionName: false
+#   AfterIfMacros: true
+#   AfterOverloadedOperator: false
+#   AfterRequiresInClause: false
+#   AfterRequiresInExpression: false
+#   BeforeNonEmptyParentheses: false
